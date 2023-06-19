@@ -1,40 +1,5 @@
 ﻿#include <iostream>
-
-class fraction {
-private:
-    double _numerator;
-    double _denominator;
-public:
-    fraction(double numerator, double denominator) {
-        _numerator = numerator;
-        _denominator = denominator;
-    }
-
-    void GetSumm() { // Сумма
-        std::cout << _numerator << " + " << _denominator << " = " << _numerator + _denominator << std::endl;
-    }
-
-    void GetDiff() { // Разность
-        std::cout << _numerator << " - " << _denominator << " = " << _numerator - _denominator << std::endl;
-    }
-
-    void GetDiv() { // Деление
-        std::cout << _numerator << " / " << _denominator << " = " << _numerator / _denominator << std::endl;
-    }
-
-    void GetMult() { // Умножение
-        std::cout << _numerator << " * " << _denominator << " = " << _numerator * _denominator << std::endl;
-    }
-
-    void GetDiffRev() { // Обратная разность
-        std::cout << _denominator << " - " << _numerator << " = " << _denominator - _numerator << std::endl;
-    }
-    void GetDivRev() { // Обратное деление
-        std::cout << _denominator << " / " << _numerator << " = " << _denominator / _numerator << std::endl;
-    }
-
-};
-
+#include "fraction.h"
 
 int main() {
     setlocale(LC_ALL, "Russian");
